@@ -589,6 +589,7 @@ header.masthead .intro-text .intro-heading {
 .timeline-blog .timeline-body-blog > ul,
 .timeline-blog .timeline-body-blog > p {
   margin-bottom: 0;
+  padding-bottom: 50px
 }
 
 @media (min-width: 768px) {
