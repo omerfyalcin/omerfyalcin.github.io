@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu, Roboto, sans-serif;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9fa;
+  text-align: center;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  background-color: #fcfcfc;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.menu-items {
+  width: 75%;
+  margin-right: 12.5%;
+  margin-left: 12.5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu-items ul li {
+  color: #444444;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar a {
+  color: #444444;
+  padding: 20px 32px;
+  display: inline-block;
+  font-size: large;
+}
+
+.logo {
+  float: left;
+  font-size: x-large;
+}
+
+/* ####################################################### */
+.blog-container {
+  width: 1200px;
+  margin: 10vh 40px;
+  display: inline-block;
+}
+
+.single-post-container {
+  width: calc(33.3% - 40px);
+  height: 500px;
+  float: left;
+  margin: 20px 20px;
+  background-color: #ededed;
+  border-radius: 5%;
+}
+
+.small-post-image {
+  width: 100%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.post-title {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p.single-post-intro {
+  padding: 25px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+  .blog-container {
+    width: 300px;
+    margin: 10vh 40px;
+  }
+  .single-post-container {
+    width: 300px;
+    margin: 10px 0;
+  }
+
+  .post-title {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .logo {
+    font-size: large;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .blog-container {
+    width: 450px;
+    margin: 10vh 40px;
+  }
+  .single-post-container {
+    width: 450px;
+    margin: 10px 0;
+    height: 600px;
+  }
+
+  .post-title {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .logo {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .blog-container {
+    width: 800px;
+    margin: 10vh 40px;
+  }
+  .single-post-container {
+    width: calc(50% - 40px);
+    margin: 10px 15px;
+    height: 600px;
+  }
+
+  .post-title {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .logo {
+    font-size: large;
+  }
+}
+
+/* styling single-blog-post.html */
+
+.blog-post-container {
+  margin: 50px 0;
+  width: 800px;
+  margin-left: calc((100vw - 800px) / 2);
+  margin-right: calc((100vw - 800px) / 2);
+  background-color: #ededed;
+  border-radius: 1%;
+}
+
+.blog-meta-section {
+  margin: 30px 0;
+}
+
+.blog-meta-section img {
+  width: 100%;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
+}
+
+.actual-post-title {
+  padding: 20px 0;
+}
+
+.subtext {
+  font-style: italic;
+}
+
+.blog-post-container p {
+  text-align: justify;
+  padding: 20px 50px;
+}
+
+.text-section {
+  padding: 10px 50px;
+}
+
+/* ====== FOOTER ======= */
+
+/* notes on how to style the footer https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/*/
+/* Footer social media icons from: https://www.iconfinder.com/ */
+.footer {
+  background-color: #adc1d2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+/* header {
+  background-color: #adc1d2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+} */
+
+.social-icon {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+/* Footer height */
+#content-wrap {
+  padding: 60px 0;
+}
+
+/* Styling the about me page */
+
+#about-me {
+  width: 1000px;
+  margin: 20px calc((100vw - 1000px) / 2);
+  padding: 50px 0;
+}
+
+.about-me-text-class {
+  width: 70%;
+  padding: 0 50px;
+  float: left;
+  text-align: justify;
+}
+
+.about-me-image-class {
+  width: 30%;
+  float: left;
+}
+
+#about-me-image {
+  width: 100%;
+  padding: 0;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #e3e3e4;
+}
+
+#welcome {
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+p {
+  padding: 20px 0;
+}
+
+a {
+  color: #2c6f87;
+}

@@ -13,38 +13,49 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div id="page-container">
-      <div id="content-wrap">
-        <!-- ===============   HEADER   =================== -->
-        <header>
-          <div class="menu-items">
-            <ul class="logo">
-              <li>Omer F. Yalcin</li>
-            </ul>
-            <div class="navbar">
-              <a href="#">Home</a>
-              <a href="#">Research</a>
-              <a href="#">Teaching</a>
-              <a href="#">CV</a>
-              <a href="#">Blog</a>
-            </div>
-          </div>
-        </header>
-        <!-- =============== END HEADER   =================== -->
+    <div id="body-container">
+      <!-- ===============   HEADER   =================== -->
 
-        <!-- ALL CONTENT EXCEPT FOR HEADER SHOULD BE BELOW HERE -->
+      <header>
+        <div id="header">
+          <span class="logo">
+            <a href="#" id="logo"><strong>Omer F. Yalcin</strong></a>
+          </span>
+          <span class="navbar">
+            <a href="index.html" class="current-page">Home</a>
+            <a href="#">Research</a>
+            <a href="#">Teaching</a>
+            <a href="cv.html">CV</a>
+            <a href="single-blog-post.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </span>
+        </div>
+      </header>
 
+      <!-- =============== END HEADER   =================== -->
+
+      <!-- ALL CONTENT EXCEPT FOR HEADER SHOULD BE BELOW HERE -->
+      <div class="content-wrap">
         <div id="about-me">
           <div class="about-me-text-class">
-            <h1 id="welcome">Welcome to my personal webpage!</h1>
+            <h1 id="welcome">Welcome.</h1>
             <p>
+              <img
+                id="about-me-image"
+                src="./img/Yalcin_portrait_square.jpg"
+                alt=""
+              />
               I am a Ph.D. candidate in
               <a href="https://polisci.la.psu.edu/">Political Science</a> and
               <a href="https://soda.la.psu.edu/soda">Social Data Analytics</a>
-              at the Pennsylvania State University. I am advised by
+              at the Pennsylvania State University and am advised by
               <a href="http://brucedesmarais.com/">Bruce Desmarais</a>. I have
               previously studied at Humboldt University in Berlin, Germany and
               at Bogazici University in Istanbul, Turkey.
@@ -58,13 +69,7 @@
               a regional interest in the Arab world.
             </p>
           </div>
-          <div class="about-me-image-class">
-            <img
-              id="about-me-image"
-              src="./img/Yalcin_portrait_square.jpg"
-              alt=""
-            />
-          </div>
+          <div class="about-me-image-class"></div>
         </div>
       </div>
       <!-- ALL CONTENT EXCEPT FOOTER SHOULD BE ABOVE THIS -->
