@@ -75,8 +75,8 @@ header {
 }
 
 #header > span a {
-  padding: 5px 0px;
   margin: 15px 20px;
+  padding: 5px 0px;
   text-decoration: none;
   color: var(--alternativeNavbarStillColor);
   vertical-align: middle;
