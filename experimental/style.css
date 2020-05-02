@@ -205,13 +205,54 @@ p {
 
 /* END STYLE THE SINGLE-BLOG-POST */
 
-
 /* STYLE THE CV PAGE*/
 
-iframe{
+iframe {
   width: 100%;
   height: 100vh;
   padding: 40px 0;
 }
 
+.indented {
+  text-indent: 20px;
+}
+
+.hangingindent {
+  padding-left: 20px;
+  text-indent: -20px;
+}
+
+.section-title {
+  font-weight: bold;
+}
+.subsection-title {
+  font-weight: bold;
+}
+
+.column-1 {
+  width: 20%;
+}
+.column-2 {
+  width: 60%;
+}
+.column-3 {
+  width: 20%;
+  text-align: right;
+}
+.column-23 {
+  width: 80%;
+  text-align: justify;
+}
+
+td {
+  vertical-align: top;
+  padding: 2px 0;
+}
+
+table.cv {
+  padding-top: 30px;
+  table-layout: fixed;
+  width: 100%;
+  line-height: 1.5;
+}
 /* END STYLE THE CV PAGE*/
