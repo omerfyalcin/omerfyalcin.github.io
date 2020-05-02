@@ -61,6 +61,11 @@ header {
 #header {
   width: 940px; /* 900 + 40 to accommodate 20 px margin (and padding when hovered) on both sides for logo and navbar */
   margin: auto;
+  /* Preferred solution to send logo to left and navbar to right using display flex and justify content: space-between: */
+  /* Reference: https://stackoverflow.com/questions/5067279/how-to-align-this-span-to-the-right-of-the-div */
+  display: flex;
+  justify-content: space-between;
+  /* have prefiously used float left and right, which I now deleted. */
 }
 
 #header > span {
@@ -93,9 +98,6 @@ header {
   border-radius: 7px;
 }
 
-.logo {
-  float: left;
-}
 .logo > a {
   font-size: 22px;
   letter-spacing: 0.07em;
@@ -105,9 +107,6 @@ header {
   cursor: default;
 }
 
-.navbar {
-  float: right;
-}
 .navbar > a {
   font-size: 18px;
 }
