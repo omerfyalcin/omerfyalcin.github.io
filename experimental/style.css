@@ -18,11 +18,17 @@
 }
 
 html {
+  /*Add this so that the presence vs. absence of scrollbar does not alter width and thus size/location of header etc.*/
+  /* Ref: https://stackoverflow.com/questions/18548465/prevent-scroll-bar-from-adding-up-to-the-width-of-page-on-chrome */
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  /* with these settings, the page is centered according to the view width (vw) when there's no vertical scrollbar*/
+  /* i.e. when there's a scrollbar, it is very very slightly right of center of the remaining viewport*/
 }
 
 body {
+  /* To stop a scrollbar from appearing next to footer: */
+  /*Ref: https://stackoverflow.com/questions/42508504/min-height-100vh-creates-vertical-scrollbar-even-though-content-is-smaller-than*/
   display: flex;
 }
 
@@ -55,14 +61,16 @@ header {
 #header {
   width: 940px; /* 900 + 40 to accommodate 20 px margin (and padding when hovered) on both sides for logo and navbar */
   margin: auto;
-
+  /* Preferred solution to send logo to left and navbar to right using display flex and justify content: space-between: */
+  /* Reference: https://stackoverflow.com/questions/5067279/how-to-align-this-span-to-the-right-of-the-div */
   display: flex;
   justify-content: space-between;
+  /* have prefiously used float left and right, which I now deleted. */
 }
 
 #header > span {
   display: inline-block;
-  line-height: 100%;
+  line-height: 100%; /* makes centering easier */
   padding: 30px 0;
 }
 
@@ -105,6 +113,52 @@ header {
 
 /* END == STYLE THE HEADER */
 
+/* STYLE THE CONTENT */
+
+.content-wrap {
+  padding: 30px 0;
+  width: 900px;
+  margin: auto;
+  display: block;
+  /* If display is inline-block then margin:auto; doesn't work.*/
+}
+
+.about-me-text-class {
+  width: 100%;
+}
+
+.about-me-text-class > h1 {
+  padding-bottom: 15px;
+  font-weight: normal;
+  font-size: normal; /* this sets to what's normal for h1, which is 32px */
+}
+
+/* .about-me-text-class >  */
+p {
+  padding: 20px 0;
+  font-size: normal;
+  line-height: 1.75rem;
+  text-align: justify;
+  color: var(--bodyTextColor);
+}
+
+.about-me-image-class {
+  width: 30%;
+  float: right;
+}
+
+/* .about-me-image-class >  */
+.about-me-text-class > p > img {
+  width: 30%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  border-radius: 5%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d8d8d8;
+  float: right;
+}
+
 /* END == STYLE THE CONTENT */
 
 /* STYLE THE FOOTER */
@@ -115,7 +169,7 @@ header {
   width: 100%;
   height: 50px;
   text-align: center;
-
+  /* To stop a scrollbar from appearing next to footer: */
   display: flex;
   justify-content: center;
 }
@@ -127,3 +181,77 @@ header {
 }
 
 /* END == STYLE THE FOOTER */
+
+/* STYLE THE SINGLE-BLOG-POST */
+
+.blog-title {
+  font-family: "Comfortaa", cursive;
+  font-size: xx-large;
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+
+.blog-post {
+  padding: 50px 60px;
+  text-align: center;
+  background-color: #ededed;
+  border-radius: 1%;
+}
+
+.blog-image {
+  text-align: center;
+}
+
+/* END STYLE THE SINGLE-BLOG-POST */
+
+/* STYLE THE CV PAGE*/
+
+iframe {
+  width: 100%;
+  height: 100vh;
+  padding: 40px 0;
+}
+
+.indented {
+  text-indent: 20px;
+}
+
+.hangingindent {
+  padding-left: 20px;
+  text-indent: -20px;
+}
+
+.section-title {
+  font-weight: bold;
+}
+.subsection-title {
+  font-weight: bold;
+}
+
+.column-1 {
+  width: 20%;
+}
+.column-2 {
+  width: 60%;
+}
+.column-3 {
+  width: 20%;
+  text-align: right;
+}
+.column-23 {
+  width: 80%;
+  text-align: justify;
+}
+
+td {
+  vertical-align: top;
+  padding: 2px 0;
+}
+
+table.cv {
+  padding-top: 30px;
+  table-layout: fixed;
+  width: 100%;
+  line-height: 1.5;
+}
+/* END STYLE THE CV PAGE*/
