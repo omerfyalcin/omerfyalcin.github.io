@@ -80,7 +80,6 @@ header {
   text-decoration: none;
   color: var(--alternativeNavbarStillColor);
   vertical-align: middle;
-  transition: all 0.4s;
   padding-right: 0px;
   padding-left: 0px;
   margin-right: 20px;
@@ -96,6 +95,10 @@ header {
   margin-right: 0px;
   margin-left: 0px;
   border-radius: 7px;
+}
+
+#header > span.navbar > a:hover {
+  transition: all 0.4s;
 }
 
 .logo > a {
