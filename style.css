@@ -120,7 +120,7 @@ header {
 label {
   display: none;
   font-size: 26px;
-  padding: 10px 30px;
+  padding: 20px 30px;
 }
 
 #toggle {
@@ -147,8 +147,8 @@ label {
   }
 
   .logo {
-    display: inline-block;
-    justify-content: space-between;
+    /* display: inline-block; */
+    /* justify-content: space-between; */
   }
   #header {
     justify-content: unset;
@@ -164,11 +164,14 @@ label {
   .toggle-cls {
     width: 100vw;
     display: inline-block;
+    text-align: center;
     /* float: right; */
   }
 
-  a#logo {
+  .logo {
+    width: 100vw;
     display: inline-block;
+    text-align: center;
     /* float: left; */
   }
 
