@@ -59,7 +59,7 @@ header {
 }
 
 #header {
-  width: 940px; /* 900 + 40 to accommodate 20 px margin (and padding when hovered) on both sides for logo and navbar */
+  width: 840px; /* 900 + 40 to accommodate 20 px margin (and padding when hovered) on both sides for logo and navbar */
   margin: auto;
   /* Preferred solution to send logo to left and navbar to right using display flex and justify content: space-between: */
   /* Reference: https://stackoverflow.com/questions/5067279/how-to-align-this-span-to-the-right-of-the-div */
@@ -120,7 +120,7 @@ header {
 
 .content-wrap {
   padding: 30px 0;
-  width: 900px;
+  width: 800px;
   margin: auto;
   display: block;
   /* If display is inline-block then margin:auto; doesn't work.*/
@@ -145,14 +145,14 @@ p {
   color: var(--bodyTextColor);
 }
 
-.about-me-image-class {
-  width: 30%;
+/* .about-me-image-class {
+  width: 60%;
   float: right;
-}
+} */
 
 /* .about-me-image-class >  */
 .about-me-text-class > p > img {
-  width: 30%;
+  width: 35%;
   margin-left: 50px;
   margin-bottom: 50px;
   border-radius: 5%;
