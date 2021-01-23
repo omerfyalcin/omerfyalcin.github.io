@@ -15,6 +15,7 @@
   --bodyTextColor: #121313;
   --HeaderFooterBackgroundColor: #e7f0f3;
   --alternativeHeaderFooterBackgroundColor: #ebf2f5;
+  --contentWidth: 800px;
 }
 
 html {
@@ -59,7 +60,9 @@ header {
 }
 
 #header {
-  width: 840px; /* 900 + 40 to accommodate 20 px margin (and padding when hovered) on both sides for logo and navbar */
+  width: calc(
+    var(--contentWidth) + 40px
+  ); /* 900 + 40 to accommodate 20 px margin (and padding when hovered) on both sides for logo and navbar */
   margin: auto;
   /* Preferred solution to send logo to left and navbar to right using display flex and justify content: space-between: */
   /* Reference: https://stackoverflow.com/questions/5067279/how-to-align-this-span-to-the-right-of-the-div */
@@ -115,6 +118,13 @@ header {
 }
 
 /* END == STYLE THE HEADER */
+
+/* MOBILE VERSION */
+@media screen and (max-width: 850px) {
+  .navbar {
+    visibility: hidden;
+  }
+}
 
 /* STYLE THE CONTENT */
 
