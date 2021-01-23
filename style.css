@@ -68,7 +68,7 @@ header {
   /* Reference: https://stackoverflow.com/questions/5067279/how-to-align-this-span-to-the-right-of-the-div */
   display: flex;
   justify-content: space-between;
-  /* have prefiously used float left and right, which I now deleted. */
+  /* have previously used float left and right, which I now deleted. */
 }
 
 #header > span {
@@ -117,12 +117,67 @@ header {
   font-size: 18px;
 }
 
+label {
+  display: none;
+  font-size: 26px;
+  padding: 10px 30px;
+}
+
+#toggle {
+  display: none;
+}
+
 /* END == STYLE THE HEADER */
 
 /* MOBILE VERSION */
 @media screen and (max-width: 850px) {
+  label {
+    display: inline-block;
+    text-align: right;
+  }
+
+  #header > span {
+    display: block;
+    padding: 0;
+  }
+
+  #header > span > a {
+    display: block;
+  }
+
+  .logo {
+    display: inline-block;
+    justify-content: space-between;
+  }
+  #header {
+    justify-content: unset;
+    display: block;
+  }
+
   .navbar {
-    visibility: hidden;
+    display: block;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .toggle-cls {
+    width: 100vw;
+    display: inline-block;
+    /* float: right; */
+  }
+
+  a#logo {
+    display: inline-block;
+    /* float: left; */
+  }
+
+  #toggle:checked + .navbar {
+    display: none;
+  }
+
+  /* explanation as to why "body" is used in the line below: https://stackoverflow.com/questions/19038240/media-query-styles-not-overriding-original-styles */
+  body .content-wrap {
+    width: 75vw;
   }
 }
 
