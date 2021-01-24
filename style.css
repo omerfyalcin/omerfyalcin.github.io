@@ -138,7 +138,6 @@ label {
   }
 
   #header > span {
-    display: block;
     padding: 0;
   }
 
@@ -146,17 +145,15 @@ label {
     display: block;
   }
 
-  .logo {
-    /* display: inline-block; */
-    /* justify-content: space-between; */
-  }
   #header {
     justify-content: unset;
     display: block;
   }
 
-  .navbar {
-    display: block;
+  /* Why I should have #header here: https://stackoverflow.com/questions/31441049/css-display-none-not-working-on-div-and-its-contents/31441458 */
+  /* Also take a look here: https://stackoverflow.com/questions/19038240/media-query-styles-not-overriding-original-styles */
+  #header > span.navbar {
+    display: none;
     text-align: center;
     width: 100vw;
   }
@@ -175,8 +172,8 @@ label {
     /* float: left; */
   }
 
-  #toggle:checked + .navbar {
-    display: none;
+  #toggle:checked + span.navbar {
+    display: block;
   }
 
   /* explanation as to why "body" is used in the line below: https://stackoverflow.com/questions/19038240/media-query-styles-not-overriding-original-styles */
