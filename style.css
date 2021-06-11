@@ -8,8 +8,7 @@ html {
 p {
   font-size: large;
   text-align: justify;
-  font-family: Georgia;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia;
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: Merriweather, "DejaVu Serif", Georgia, serif;
 }
