@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <!-- START GOOGLE ANALYTICS -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,131 +17,179 @@
       gtag("config", "UA-169936602-1");
     </script>
     <!-- END GOOGLE ANALYTICS -->
+
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omer F. Yalcin</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="academicons/css/academicons.css" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
-      rel="stylesheet"
-    />
+    <title>Omer F. Yalcin</title>
   </head>
-
-  <body>
-    <div id="body-container">
-      <!-- ===============   HEADER   =================== -->
-
-      <header>
-        <div id="header">
-          <span class="logo">
-            <a href="#" id="logo"><strong>Ömer F. Yalçın</strong></a>
-          </span>
-          <span class="toggle-cls">
-            <label for="toggle" class = "toggle-btn">&#9776</label>
-          </span>
-            <input type="checkbox" id="toggle">
-          <span class="navbar">
-            <a href="index.html">Home</a>
-            <a href="research.html" class="current-page">Research</a>
-            <a href="teaching.html">Teaching</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contact</a>
-          </span>
+  <body class="d-flex flex-column h-100 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid col-md-6">
+        <a class="navbar-brand" href="#">Ömer F. Yalçın</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Research</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teaching.html">Teaching</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+          </ul>
         </div>
-      </header>
+      </div>
+    </nav>
 
+    <!-- END OF NAVBAR -->
 
-      <!-- =============== END HEADER   =================== -->
+    <div class="container-fluid bg-light">
+      <div class="row justify-content-center">
+        <div class="col-md-6 bg-white rounded border px-5 py-3 my-3">
+          <h3 class="py-3">Research</h3>
 
-      <!-- ALL CONTENT EXCEPT FOR HEADER SHOULD BE BELOW HERE -->
-      <div class="content-wrap">
-        <div id="about-me">
-          <div class="about-me-text-class">
-            <p>
-              My research centers around two areas: elite networks and social
-              media. Substantively, I am interested in political elites: who
-              they are, how they interact, and what long term consequences 
-              these interactions have for their respective regimes. Through my
-              training in social data analytics and my work as an RA at the
-              Center for Social Data Analytics at Penn State, I have also been
-              involved in projects that use digital user-created and
-              collaborative data sources, of which social media is a part. These
-              interests go in tandem with one another. Part of my research deals
-              with how this type of collaborative data can help political
-              scientists study political elites in a way that is not possible
-              with conventional sources of data.
-            </p>
+          <h5 class="text-decoration-underline">Political Elite Networks</h5>
 
-            <h3>Publications</h3>
-            <p class="hangingindent">
-              Sangyeon Kim, <strong>Omer F. Yalcin,</strong> Samuel Bestvater,
-              Kevin Munger, Burt Monroe, and Bruce Desmarais. The Effects of an
-              Informational Intervention on Attention to Anti-Vaccination
-              Content on YouTube. In
-              <i
-                >Proceedings of the Fourteenth International AAAI Conference on
-                Web and Social Media (ICWSM) </i
-              >2020. (View it
-              <a
-                href="https://aaai.org/ojs/index.php/ICWSM/article/view/7364/7218"
-                >here</a
-              >.)
-            </p>
-            <h3>Working Papers</h3>
-            <p class="hangingindent">
-              Lulu Peng, <strong>Omer F. Yalcin,</strong> Shipi Dhanorkar, and
-              Guangqing Chi. Public Emotions Contextualized by Places: An
-              Investigation of Geotagged Tweets on the Black Lives Matter
-              Movement.
-            </p>
-            <p class="hangingindent">
-              A Network Theory of Coalition Formation <br />
-              Part of my dissertation, this paper models political coalition
-              formation process as that of formation of an elite network, where
-              individuals are free to choose their support ties given everyone’s
-              exogenously given power and ideology.
-            </p>
+          <div class="row">
+            <div class="col-md-12 mb-2">
+              <p>
+                Political elites are people who influence political outcomes in
+                a country. Networks of political elites are formed through
+                relationships among these actors: kinship, co-religion, support
+                and consultation, co-attendance at a school, and so on. My
+                dissertation is about the empirical and theoretical study of
+                these networks.
+              </p>
+            </div>
           </div>
-          <div class="about-me-image-class"></div>
+
+          <div class="row">
+            <div class="col-md-12 mb-2">
+              <p>
+                Empirically, I use Wikidata as a source of data for the study of
+                kinship ties among people in positions of power in countries
+                around the globe. Wikidata is the only source of data to my
+                knowledge that has machine readable data on politicians,
+                military officials, businesspeople, clergy, etc. with many
+                layers of ties among them, including kinship ties, for almost
+                all countries in the world. I find that kinship ties in
+                authoritarian countries are denser than those in democratic
+                countries.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <figure class="my-4 float-end">
+                <img src="img/PlacesOfBirth.png" width="100%" />
+                <figcaption class="text-center" style="font-size: 16px; font-family: Georgia">
+                  Places of birth of elite actors in Wikidata
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 mb-2">
+              <p>
+                Theoretically, I work on coalition-building process among the
+                elites from a network perspective. In a network formation game
+                where each elite actor can send support ties to every other
+                actor, I look into the impact of ideological polarization on the
+                eventual ruling coalition. I find that ideologically polarized
+                environments lead to fewer Nash equilibria and a more unequal
+                distribution of power in the ruling coalition, with the leader
+                amassing more power at the expense of those in the coalition.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <h5 class="text-decoration-underline">Social Media & Politics</h5>
+
+          <div class="row">
+            <div class="col-md-12 mb-2">
+              <p>
+                I also do research on social media. Our work with colleagues on
+                anti-vaccine content on YouTube, which was conducted
+                pre-Covid-19 but seems of increased relevance now, shows how
+                YouTube’s placement of a Wikipedia knowledge panel was
+                influential in curbing the spread of misinformation related to
+                vaccines. You can view the paper
+                <a
+                  href="https://ojs.aaai.org//index.php/ICWSM/article/view/7364/7218"
+                  >here</a
+                >.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- ALL CONTENT EXCEPT FOOTER SHOULD BE ABOVE THIS -->
-      <!-- ============ FOOTER =================== -->
-      <div class="footer">
-        <a
-          href="https://twitter.com/omerfyalcin"
-          target="_blank"
-          class="twitter"
-          ><img
-            class="social-icon"
-            src="./img/social-media/twitter.svg"
-            alt="twitter"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/ofyalcin/"
-          target="_blank"
-          class="linkedin"
-          ><img
-            class="social-icon"
-            src="./img/social-media/linkedin.svg"
-            alt="linkedin"
-        /></a>
-        <a href="https://github.com/omerfyalcin" target="_blank" class="github"
-          ><img
-            class="social-icon"
-            src="./img/social-media/github.svg"
-            alt="hithub"
-        /></a>
-      </div>
-      <!-- =========== END FOOTER =============== -->
     </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer mt-auto py-3 bg-white">
+      <div class="container-fluid justify-content-center d-flex px-0">
+        <div class="col-md-6 justify-content-between d-flex">
+          <span class="text-muted"> © 2021 Omer F. Yalcin</span>
+
+          <span>
+            <a
+              class="fab fa-github px-2 link-dark text-decoration-none"
+              href="https://www.github.com/omerfyalcin"
+            ></a>
+            <a
+              class="fab fa-linkedin-in px-2 link-dark text-decoration-none"
+              href="https://www.linkedin.com/in/ofyalcin/"
+            ></a>
+
+            <a
+              class="fab fa-twitter px-2 link-dark text-decoration-none"
+              href="https://twitter.com/omerfyalcin"
+            ></a>
+            <a
+              class="ai ai-google-scholar px-2 link-dark text-decoration-none"
+              href="https://scholar.google.com/citations?user=SxJ94kgAAAAJ&hl=en"
+            ></a>
+          </span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

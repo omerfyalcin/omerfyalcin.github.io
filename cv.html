@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <!-- START GOOGLE ANALYTICS -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,88 +17,119 @@
       gtag("config", "UA-169936602-1");
     </script>
     <!-- END GOOGLE ANALYTICS -->
+    
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omer F. Yalcin</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="academicons/css/academicons.css" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
-      rel="stylesheet"
-    />
+    <title>Omer F. Yalcin</title>
   </head>
+  <body class="d-flex flex-column h-100 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid col-md-6">
+        <a class="navbar-brand" href="#">Ömer F. Yalçın</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="research.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teaching.html">Teaching</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <body>
-    <div id="body-container">
-      <!-- ===============   HEADER   =================== -->
+    <!-- END OF NAVBAR -->
 
-      <header>
-        <div id="header">
-          <span class="logo">
-            <a href="#" id="logo"><strong>Ömer F. Yalçın</strong></a>
-          </span>
-          <span class="toggle-cls">
-            <label for="toggle" class = "toggle-btn">&#9776</label>
-          </span>
-            <input type="checkbox" id="toggle">
-          <span class="navbar">
-            <a href="index.html">Home</a>
-            <a href="research.html">Research</a>
-            <a href="teaching.html">Teaching</a>
-            <a href="cv.html" class="current-page">CV</a>
-            <a href="contact.html">Contact</a>
+    <div class="container-fluid bg-light">
+      <div class="row justify-content-center">
+        <div class="col-md-6 bg-white rounded border px-5 py-3 my-3">
+          <h3 class="py-3">CV</h3>
+          <div class="row">
+            <div class="col-md-12 mb-2">
+              <p>
+                You can view my CV below or download it from
+                <a href="./cv/CV_Yalcin.pdf">here.</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <iframe
+                src="./cv/CV_Yalcin.pdf"
+                width="100%"
+                height="800px"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer mt-auto py-3 bg-white">
+      <div class="container-fluid justify-content-center d-flex px-0">
+        <div class="col-md-6 justify-content-between d-flex">
+          <span class="text-muted"> © 2021 Omer F. Yalcin</span>
+
+          <span>
+            <a
+              class="fab fa-github px-2 link-dark text-decoration-none"
+              href="https://www.github.com/omerfyalcin"
+            ></a>
+            <a
+              class="fab fa-linkedin-in px-2 link-dark text-decoration-none"
+              href="https://www.linkedin.com/in/ofyalcin/"
+            ></a>
+
+            <a
+              class="fab fa-twitter px-2 link-dark text-decoration-none"
+              href="https://twitter.com/omerfyalcin"
+            ></a>
+            <a
+              class="ai ai-google-scholar px-2 link-dark text-decoration-none"
+              href="https://scholar.google.com/citations?user=SxJ94kgAAAAJ&hl=en"
+            ></a>
           </span>
         </div>
-      </header>
-
-
-      <!-- =============== END HEADER   =================== -->
-
-      <!-- ALL CONTENT EXCEPT FOR HEADER SHOULD BE BELOW HERE -->
-      <div class="content-wrap">
-        <p>
-          You can view my CV below or download it from
-          <a href="./cv/CV_Yalcin.pdf" download="CV_Yalcin.pdf">here</a>.
-        </p>
-
-        <iframe src="./cv/CV_Yalcin.pdf"></iframe>
       </div>
-      <!-- ALL CONTENT EXCEPT FOOTER SHOULD BE ABOVE THIS -->
-      <!-- ============ FOOTER =================== -->
-      <div class="footer">
-        <a
-          href="https://twitter.com/omerfyalcin"
-          target="_blank"
-          class="twitter"
-          ><img
-            class="social-icon"
-            src="./img/social-media/twitter.svg"
-            alt="twitter"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/ofyalcin/"
-          target="_blank"
-          class="linkedin"
-          ><img
-            class="social-icon"
-            src="./img/social-media/linkedin.svg"
-            alt="linkedin"
-        /></a>
-        <a href="https://github.com/omerfyalcin" target="_blank" class="github"
-          ><img
-            class="social-icon"
-            src="./img/social-media/github.svg"
-            alt="hithub"
-        /></a>
-      </div>
-      <!-- =========== END FOOTER =============== -->
-    </div>
+    </footer>
   </body>
 </html>
